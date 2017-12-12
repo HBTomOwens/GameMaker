@@ -1,0 +1,7 @@
+// Player Stats
+playerSpeed = 4;
+playerHealth = 3;
+
+// Damage Delay
+damageDelay = 0;
+damageDelayMax = 90; 
