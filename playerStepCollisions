@@ -1,0 +1,9 @@
+if place_meeting(x,y,oEnemy) && damageDelay == 0
+    {
+    playerHealth -= 1;
+    damageDelay = damageDelayMax;
+    }
+    else if damageDelay > 0
+        {
+        damageDelay -= 1;
+        }
