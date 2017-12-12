@@ -1,0 +1,28 @@
+//Shortcuts for keypresses
+moveLeft  = keyboard_check(ord("A"));
+moveRight = keyboard_check(ord("D"));
+moveUp    = keyboard_check(ord("W"));
+moveDown  = keyboard_check(ord("S"));
+pFire     = keyboard_check(vk_space);
+
+//Movement
+if moveRight && !place_meeting(x+playerSpeed,y,oCollision)
+    {
+    x += playerSpeed;
+    sprite_index = sPlayerRight;
+    }
+if moveLeft && !place_meeting(x-playerSpeed,y,oCollision)
+    {
+    x -= playerSpeed;
+    sprite_index = sPlayerLeft;
+    }
+if moveUp && !place_meeting(x,y-playerSpeed,oCollision)
+    {
+    y -= playerSpeed;
+    sprite_index = sPlayerUp;
+    }
+if moveDown && !place_meeting(x,y+playerSpeed,oCollision)
+    {
+    y += playerSpeed;
+    sprite_index = sPlayerDown;
+    }
